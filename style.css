@@ -1,0 +1,850 @@
+@charset "UTF-8";
+/*
+Theme Name: Hey masa
+Description: for portfolio of Author
+Author: Masashi Yanagida
+Author URI:http://heymasa.co.nz/
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,100);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+/*
+* Reset css
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+	display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+
+/*
+* Font
+ */
+
+html,body{
+	font-family: Helvetica , "游ゴシック" , "Yu Gothic" , sans-serif;
+}
+
+
+/*
+* Main
+ */
+
+body{
+    background: black;
+    font-family: 'NHaasGroteskDSW02-35XLt', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+#container{
+	position: relative;
+    overflow: hidden;
+}
+
+#container header {
+	position: fixed;
+	z-index: 10;
+	width: 100%;	
+	padding-bottom: 10px;
+    background: transparent;
+}
+
+#container header .center {
+	width: 1012px;	
+	margin: 0 auto;
+}
+
+#container h1 {
+	float: left;
+	margin-top: 25px;
+}
+
+nav {
+	font-size: 14px;
+	z-index: 11;
+	float: right;
+}
+
+nav ul li {
+	margin: 45px 9px 0;
+	padding-bottom: 9px;
+	float: left;
+	position: relative;	
+	overflow: hidden;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    height: 20px;
+    display: block;
+}
+
+nav ul li a:hover,nav ul li a:focus{
+    color:white;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -o-transition:all 1s ease;
+}
+
+.col-md-12{
+    padding: 0 15%;
+}
+
+/*
+*	home
+*/
+
+#home{
+    position: relative;
+    top: 0px;
+    height: 100%;
+}
+
+#home.scrollin2{
+    opacity: 1;
+    color: white;
+    background: url("/img/homebg2.jpeg") no-repeat;
+    background-attachment: fixed;
+}
+
+#home.scrollin2:before {
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+#home .center,#design .center,#about .center,#casestudies .center, #contact .center{
+	min-height: 400px;
+/*    width: 1012px; */
+    margin: 0 auto;
+	padding-top:150px;
+}
+
+#home .center{
+        padding-top: 230px;
+	text-align:center;
+}
+
+#home h2,#design h2,#about h2,#casestudies h2,#contact h2{
+	font-size:48px;
+	line-height: 55px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+.caseset aside h3 {
+	font-size:30px;
+	line-height: 55px;
+/*	display:none; */
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+.caseset aside p {
+	line-height: 1.5;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+#home h2 span,#design h2 span,#about h2 span,#casestudies h2 span, .caseset aside h3 span, #contact h2 span{
+	font-weight: normal;
+    font-family: arial;
+display: block;
+}
+
+#home .skill{
+	margin: 60px 0 0;
+    display: inline-block;
+}
+
+#home .skill .trats{
+	left: 150px;
+    color: white;
+
+}
+
+#home .skill a.trats{
+    background-color: rgba(33,67,113,0.75);
+    border: 1px solid white;
+    box-shadow: 0 0 0 7px rgba(33,67,113,0.75);
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    float: left;
+    margin: 15px 60px 0 0;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+#home.scrollin2 .skill a.trats{
+    transition:all 0.1s linear;
+    -webkit-transition:all 0.1s linear;
+    -moz-transition:all 0.1s linear;
+    -o-transition:all 0.1s linear;
+ }
+
+#home.scrollin2 .skill a:hover{
+	margin-top: 0px;
+	transition:all 0.1s linear;
+	-webkit-transition:all 0.1s linear;
+    -moz-transition:all 0.1s linear;
+    -o-transition:all 0.1s linear;
+}
+
+
+#home .skill a.trats span.number{
+    display: block;
+    padding: 40px 0 5px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+
+#home .skill a.trats span.subtitle{
+    display: block;
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+}
+
+/*
+*	design
+*/
+
+#design{
+    background-color: #2c5379;
+    color: white;
+}
+
+#design .mCustomScrollbar{
+    overflow: auto;
+    height: 340px;
+    width: 960px;
+    display: block;
+    margin-top: 40px;
+}
+
+.mCustomScrollbar .task{
+	float: left;
+    width: 481px;
+}
+
+.mCustomScrollbar .task img{
+	float: left;
+}
+
+.mCustomScrollbar .task .task-desc{
+	float: left;
+    width: 212px;
+    padding: 40px 0 0 40px;
+}
+
+.mCustomScrollbar .task .task-desc h3{
+    font-size: 1.5em;
+}
+
+.mCustomScrollbar .task .task-desc p{
+    padding: 10px 0;
+    line-height: 18px;
+    font-size: 17px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    line-height: 1.3;
+}
+
+.mCSB_container{
+    position: relative;
+    left: 0px;
+    width: 1930px!important;
+}
+
+
+/*
+*	about
+*/
+
+#about{
+	background-color: white;
+        color: white;
+}
+
+#about.scrollin{
+    background: url("/img/about4-bg2.jpg") no-repeat;
+    background-attachment: fixed;
+}
+
+#about .center .career{
+	height: 363px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.ele-a, .ele-b,.ele-c{
+    width: 28%;
+    padding: 2%;
+    height: 96%;
+    float:left;
+}
+.ele-a{
+    margin-right: 5%;
+    padding: 40px 20px 0 0;
+}
+
+.ele-b{
+    margin-right: 5%;
+    padding: 40px 20px 0px;
+}
+
+.ele-c{
+    margin-right: 5%;
+    padding: 40px 0 20px 0;
+}
+
+#about.scrollin div.ele-a, #about.scrollin div.ele-b, #about.scrollin div.ele-c{
+    text-align: center;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.ele-a p, .ele-b p, .ele-c p{
+    text-align: left;
+    line-height: 1.3;
+    padding-left: 17px;
+    font-size: 17px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+}
+
+.ele-a h3, .ele-b h3, .ele-c h3{
+    margin: 20px 0;
+}
+
+#about.scrollin div.ele-a h3 span, #about.scrollin div.ele-b h3 span, #about.scrollin div.ele-c h3 span{
+border-bottom:2px solid white;
+line-height: 1.2;
+font-family: 'Dancing Script', cursive;
+font-size: 2em;
+} 
+
+
+/*
+*	portfolio
+*/
+#portfolio{
+    background-color: #EB2142;
+    overflow: hidden;
+}
+
+#portfolio .col-md-12{
+padding:0;
+}
+
+.project-list li{
+	float: left;
+	width: 25%;
+	list-style: none;
+}
+
+.project-list li a img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-filter: brightness(40%);
+	filter: brightness(40%);
+	transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
+}
+
+
+.project-list li a img:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: brightness(100%);
+	filter: brightness(100%);
+    -webkit-transition:all 0.2s ease;
+    -moz-transition:all 0.2s ease;
+    -o-transition:all 0.2s ease;
+    position: relative;
+    z-index: 2;
+}
+
+
+/*
+*	portfolio
+*/
+
+#casestudies{
+    background-color: #f8823c;
+}
+
+.caseset{
+    width: 640px;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.caseset aside{
+	position: relative;
+    top: -400px;
+    left: 110%;
+    width: 50%;
+}
+
+#container1{
+	height: 480px;
+    border-radius: 20px;
+}
+
+
+/*
+*	contact
+*/
+
+#contact{
+    background-color: white;
+    color:#333;
+}
+
+
+
+button, input, select, textarea {
+    width: 100%;
+    padding: .62em;
+    line-height: normal;
+    font-size: 1em;
+    font-family: inherit;
+    color: inherit;
+    border: 2px solid #eaecee;
+   background:rgba(0,0,0, .05);
+    outline: 0;
+    vertical-align: baseline;
+    margin-top: 15px;
+}
+
+#wpcf7-f212-o1{
+    margin-top: 60px;
+}
+
+.form-right,.form-left{
+    display: inline-block;
+    width: 45%;
+    margin-right: 40px;
+}
+
+.wpcf7-textarea{
+    width: 94.5%;
+    height: 100px;
+}
+
+.wpcf7-submit{
+    width: 95%;
+    background-color: #3A93DD;
+    color: white;
+    font-size: 1em;
+}
+
+span.wpcf7-not-valid-tip{
+position: relative;
+    top: 8px;
+}
+
+/* 画面外にいる状態 */
+
+#home{
+    opacity : 0;
+    background-position: right bottom;
+    background-size: 33.5%;
+    background-color: white;
+    transition : all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.fadein h2,.fadein1 h2{
+    opacity : 0;
+    transition : all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    }
+
+.fadein1 a.trats,.fadein .contact-group a.trats{
+    opacity : 0;
+    transform : translate(150px, 0px);
+    transition : all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    }
+
+.fadein .mCustomScrollbar .task img{
+    opacity : 0;
+    transform : translate(0px, -100px);
+    transition : all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.fadein .mCustomScrollbar .task .task-desc{
+    opacity : 0;
+    transform : translate(0px, 50px);
+    transition :  0.8s ease 0.5s;
+    -webkit-transition:  0.8s ease 0.5s;
+    -moz-transition:  0.8s ease 0.5s;
+    -o-transition:  0.8s ease 0.5s;
+}
+
+.fadein .ele-a, .fadein .ele-b, .fadein .ele-c{
+    opacity : 0.1;
+    transform : translate(0px, 100px);
+    transition : all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.fadein #container1{
+    opacity : 0.1;
+    transform : translate(0px, -100px);
+    transition : all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.fadein .caseset aside{
+    opacity : 0.1;
+    transform : translate(0px, 100px);
+    transition : all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+
+/* 画面内に入った状態 */
+.fadein.scrollin h2,.fadein1.scrollin1 h2{
+    opacity : 1;
+    }
+
+#home.fadein1.scrollin1 a.trats, #contact.fadein.scrollin .contact-group a.trats {
+    opacity : 1;
+    transform : translate(0, 0);
+    }
+
+.fadein.scrollin .mCustomScrollbar .task img{
+    opacity : 1;
+    transform : translate(0, 0);
+
+}
+
+.fadein.scrollin .mCustomScrollbar .task .task-desc{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.fadein.scrollin .ele-a, .fadein.scrollin .ele-b, .fadein.scrollin .ele-c{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.fadein.scrollin #container1{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+.fadein.scrollin .caseset aside{
+    opacity : 1;
+    transform : translate(0, 0);
+}
+
+div.wpcf7-response-output{
+    margin: 2em 0em 1em;
+    width: 95%;
+    text-align: center;
+}
+
+@media screen and (max-width:680px){
+#container{
+font-size:90%;
+}
+
+#container header .center {
+	width: 100%;
+}
+
+.col-md-12{
+    padding: 0 10%;
+}
+
+#home h2, #design h2, #about h2, #casestudies h2, #contact h2{
+    margin-bottom:30px ;
+}
+
+h2 span{
+display: block;
+}
+
+#home.scrollin2, #about.scrollin{
+    background-size: cover;
+}
+
+#home.scrollin2{
+    background: url("/img/homebg2m.jpeg") no-repeat;
+}
+
+#home .center,#design .center,#about .center,#casestudies .center, #contact .center{
+        margin: 0 auto 40px;
+padding-top: 100px;
+word-break: break-word;
+}
+
+#home .skill {
+    margin: 0px 0 auto;
+    width: 100px;
+}
+
+#home .skill a.trats{
+    width: 100px;
+    height: 100px;
+   margin: 25px 0 0 0;
+}
+
+#home .center{
+	text-align:center;
+}
+
+#home .skill a.trats span.number{
+    padding: 12px 0 5px;
+    font-size: 35px;
+}
+
+#home .skill a.trats span.number i{
+    margin-top: 10px;
+}
+
+#design .mCustomScrollbar{
+height:auto;
+width:100%;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer{
+display:none;
+}
+
+.mCSB_container{
+width: auto!important;
+text-align: center;
+}
+
+.mCustomScrollbar .task{
+margin-left: 10px;
+}
+.mCustomScrollbar .task .task-desc{
+padding: 40px 0 40px;
+}
+
+.mCustomScrollbar .task img,.mCustomScrollbar .task,.mCustomScrollbar .task .task-desc{
+width: auto!important;
+	float: none;
+}
+
+.fadein.scrollin .mCustomScrollbar .task img{
+width:50%!important;
+}
+
+#about.scrollin{
+    background: url("/img/about4-bg4.jpg") no-repeat;
+}
+
+.ele-a, .ele-b, .ele-c {
+    width: 100%;
+    margin-top:30px ;
+    padding: 2%;
+    height: 96%;
+    float: none;
+}
+
+#about .center .career{
+	height: auto;
+}
+
+#portfolio > div::before{
+content:'Portfolio';
+	font-size:48px;
+	line-height: 55px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    display: block;
+text-align: center;
+}
+
+.project-list li {
+    width: 100%;
+text-align: center;
+}
+
+.project-list li a img{
+ width: 90%;
+   margin: 5px 0;
+}
+
+.form-right,.form-left,.wpcf7-submit,.wpcf7-textarea{
+    width: 100%;
+}
+
+#container header .center.menu-collapsed{
+width: 92px;
+}
+
+.menu-collapsed{
+  transition: all .25s;
+  position: fixed;
+  top: 4px;
+  left: 9px;
+  height: 92px;
+  width: 60px;
+  z-index: 11;
+  cursor: pointer;
+}
+.menu-collapsed ul {
+  transition: all .05s;
+  position: fixed;
+  left: -9000px;
+}
+
+.bar {
+  position: fixed;
+  left: 12px;
+  top: 24px;
+}
+.bar:before {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -8px;
+}
+.bar:after {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+#container div.center.menu-collapsed.menu-expanded{
+  transition: all .25s;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.menu-expanded ul {
+  transition: all .05s;
+  position: relative;
+  left: 0;
+  z-index: 12;
+margin: 100px 0;
+}
+.menu-expanded ul li{
+margin: 10px 0;
+}
+
+nav,.menu-expanded ul,.menu-expanded ul li{
+ float:none;
+overflow:visible;
+}
+.menu-expanded a {
+  transition: all .15s;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  font-family: 'Quicksand', sans-serif;
+  padding: 5px;
+height: auto;
+}
+.menu-expanded a:hover {
+  transition: all .15s;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.menu-expanded .bar {
+  background-color: transparent;
+  transition: all .25s;
+}
+.menu-expanded .bar:before {
+  transition: all .25s;
+  content: "";
+  transform: rotate(45deg);
+  top: -0px;
+}
+.menu-expanded .bar:after {
+  transition: all .25s;
+  content: "";
+  transform: rotate(-45deg);
+  top: 0px;
+}
+
+}
